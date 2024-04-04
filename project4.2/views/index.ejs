@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Year of the Dragon Blessings</title>
+<link rel="stylesheet" href="/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r133/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r133/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.133.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+<script type="module" src="/background.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        const header = document.querySelector('.index-page-h1');
+
+        if (scrollPosition > 100) { // Trigger point
+            document.body.classList.add('scrolled');
+            header.classList.add('smaller');
+        } else {
+            document.body.classList.remove('scrolled');
+            header.classList.remove('smaller');
+        }
+    });
+});
+    </script>
+    
+    <div class="top-right-links">
+        <span id="aboutLink">About</span> | <span id="contactLink">Contact</span>
+    </div>
+
+</head>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script> -->
+        <body class="index-page">
+            <h1 class="index-page-h1">龙年祝福 <br> Dragon Wishes</h1>
+            <div class="scroll-trigger">
+                <br>
+                <h2>Welcome to the Year of the Dragon Blessings Page!
+                    <br> 
+                    [欢迎来到龙年祝福页面]
+                </h2>
+                <br>
+                <p>In this digital sanctuary, we invite you to offer blessings for the Year of the Dragon. Share words of hope, prosperity, or joy on this platform.
+                    <br> [在这个数字圣殿中，我们邀请您为龙年祈福。在这个平台上分享希望、繁荣或喜悦的话语]
+                </p>
+                    <br>
+                    <p class="red-text">Click on the red dragon balls to explore!
+                        <br>[点击红色的龙珠来探索]
+                    </p>
+            </div>
+            <div class="extra-content"></div>
+        
+
+</body>
+<script>
+    document.getElementById('aboutLink').addEventListener('click', function() {
+        window.location.href = '/about';
+    });
+    document.getElementById('contactLink').addEventListener('click', function() {
+        window.location.href = '/contact';
+    });
+</script>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Your Blessing</title>
+    <link rel="stylesheet" href="/style.css">
+    
+
+</head>
+<body class="upload-page">
+    <div class="container">
+        <h1>Upload Blessing [上传祝福]</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="input-group">
+                <textarea name="text" placeholder="Type your blessing here [输入您的祝福]..." required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="theimage">Choose Image [选择图片]</label>
+                <input type="file" id="theimage" name="theimage" style="display:none;">
+            </div>
+            <button type="submit" class="send-btn">Send Blessing [发送祝福]</button>
+        </form>
+    </div>
+    <a href="/">Back to Home [返回主页]</a>
+</body>
+</html>

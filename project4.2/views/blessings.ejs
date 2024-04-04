@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>View Blessings</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>View Blessings [查看祝福]</h1>
+<a href="/">Back to Home [返回主页]</a>
+<form action="/search" method="GET">
+  <input type="text" name="searchTerm" placeholder="Search Blessings...">
+  <button type="submit">Search</button>
+</form>
+<div id="blessingsContainer">
+  <% blessings.forEach(function(blessing, index) { %>
+    <div class="blessing <%= index % 2 === 0 ? 'scroll-left' : 'scroll-right' %>">
+      <% if (blessing.imgSrc) { %>
+        <img src="<%= blessing.imgSrc %>" alt="Blessing Image" style="max-width: 50%; height: auto;">
+      <% } %>
+      <p><%= blessing.text %></p>
+      <div class="blessing-date">
+        <p><%= blessing.date %></p>
+      </div>
+    </div>
+<% }); %>
+</div>
+</body>
+</html>
+

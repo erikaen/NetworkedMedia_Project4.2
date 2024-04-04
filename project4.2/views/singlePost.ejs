@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>View Post [搜索结果]</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="single-post-page">
+    <h1>Post Details [祝福结果]</h1>
+    <a href="/blessings">Back to Blessings [全部祝福]</a>
+    <div class="post-details">
+        <% if (post.imgSrc) { %>
+            <img src="<%= post.imgSrc %>" alt="Post Image" style="max-width: 50%; height: auto;">
+        <% } %>
+        <div class="blessing">
+            <p><%= post.text %></p>
+        </div>
+        <div class="post-date">
+            <p><%= post.date %></p>
+        </div>
+    </div>  
+</body>
+
+</html>
