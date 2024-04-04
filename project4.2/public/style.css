@@ -1,7 +1,7 @@
 body.index-page {
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #000; /* Adjusted to ensure text contrast */
+    background-color: #000; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -11,11 +11,11 @@ body.index-page {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 6vw;
-    margin: 0 auto; /* Center align the element */
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     font-stretch: ultra-condensed;
-    color: red; /* Preserved your color choice */
-    mix-blend-mode: difference; /* Preserved for text effect */
+    color: red;
+    mix-blend-mode: difference;
     transition: all 0.5s ease;
     z-index: 2;
     text-align: center;
@@ -27,12 +27,12 @@ body.index-page {
     top: 0;
     right: 0;
     margin: 10px;
-    z-index: 100; /* Ensure it's above the Three.js canvas */
+    z-index: 100; 
 }
 
 .top-right-links span {
     cursor: pointer;
-    color: red; /* or any other color */
+    color: red; 
     margin: 0 5px;
 }
 
@@ -41,16 +41,16 @@ body.index-page {
 }
 
 .scrolled .index-page-h1 {
-    top: 20px; /* Adjust to keep it in view */
+    top: 20px; 
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally only */
-    font-size: 60px; /* Smaller size */
+    transform: translateX(-50%); 
+    font-size: 60px; 
 }
 
 .scroll-trigger {
-    margin-top: 100vh; /* Ensure it starts below the viewport */
+    margin-top: 100vh; 
     text-align: center;
-    color: white; /* Preserved your color choice for text */
+    color: white; 
 }
 
 .scroll-trigger h2, .scroll-trigger p {
@@ -62,14 +62,14 @@ body.index-page {
     opacity: 0;
     margin: auto;
     font-size: 2vw;
-    transition: opacity 0.5s ease 0.5s; /* Delayed appearance */
-    color: white; /* Preserved your color choice for text */
+    transition: opacity 0.5s ease 0.5s; 
+    color: white; 
 }
 
 .scroll-trigger .red-text {
-    color: red; /* Ensures the red text stays red */
-    opacity: 0; /* Initially hidden like other elements */
-    transition: opacity 0.5s ease 0.5s; /* Delayed appearance */
+    color: red; 
+    opacity: 0; 
+    transition: opacity 0.5s ease 0.5s; 
 }
 
 
@@ -80,12 +80,12 @@ body.index-page {
 }
 
 .extra-content {
-    height: 20vh; /* Provide additional scrolling space */
+    height: 20vh; 
 }
 
-/* Additional styles to ensure links are visible and styled appropriately */
+
 .red-text {
-    color: red; /* Preserved your color choice */
+    color: red; 
     text-decoration: none;
     margin: 20px 0;
 }
@@ -94,8 +94,8 @@ body.index-page {
 .content {
     opacity: 0; 
     position: relative;
-    z-index: 1; /* Make sure content is above the Three.js canvas */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    z-index: 1; 
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
 }
 
@@ -111,20 +111,20 @@ body.index-page {
 body {
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #000; /* Ensures text contrast */
+    background-color: #000; 
     font-family: Arial, Helvetica, sans-serif;
-    color: white; /* Text color */
-    text-align: center; /* Aligns text to the center */
-    padding: 20px; /* Adds padding around the content */
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
 }
 
 h1 {
-    color: red; /* Heading color */
-    font-size: 4vw; /* Responsive font size */
+    color: red; 
+    font-size: 4vw;
     font-family: Arial, Helvetica, sans-serif;
     font-stretch: ultra-condensed;
-    margin: 20px auto; /* Centers the heading */
-    mix-blend-mode: difference; /* For text effect */
+    margin: 20px auto; 
+    mix-blend-mode: difference;
 }
 
 #blessingsContainer {
@@ -142,19 +142,19 @@ h1 {
     display: flex;
     overflow: hidden;
     white-space: nowrap;
-    margin-bottom: 5px; /* Controls space between rows, adjust as needed */
+    margin-bottom: 5px; 
 }
 
 .blessing {
     white-space: normal;
-    padding: 5px; /* Reduced padding for tighter spacing */
+    padding: 5px; 
     box-sizing: border-box; 
-    flex: 0 0 auto; /* Prevents flex items from growing or shrinking */
+    flex: 0 0 auto; 
     font-size: 4vw;
     color: red;
 }
 
-/* Add animations for scrolling */
+
 @keyframes scroll-left {
     from {
         transform: translateX(100%);
@@ -182,23 +182,23 @@ h1 {
 }
 
 .blessing .blessing-date {
-    font-style: italic; /* Style for the date */
-    font-size: 3vw; /* Smaller font size for the date */
+    font-style: italic; 
+    font-size: 3vw; 
 }
 
 a {
-    color: red; /* Link color */
-    text-decoration: none; /* Removes underline */
-    margin-top: 10px 0; /* Spacing around the link */
-    display: inline-block; /* Allows margin to work */
+    color: red; 
+    text-decoration: none; 
+    margin-top: 10px 0; 
+    display: inline-block; 
 }
 
 a:hover {
-    text-decoration: underline; /* Adds underline on hover */
+    text-decoration: underline; 
 }
 
 
-/* Upload Page Container */
+
 .upload-page .container {
     max-width: 800px;
     margin: 20px auto;
@@ -206,7 +206,7 @@ a:hover {
     text-align: center;
 }
 
-/* Heading Style */
+
 .upload-page h1 {
     color: red;
     font-size: 4vw; 
@@ -214,12 +214,12 @@ a:hover {
     mix-blend-mode: normal;
 }
 
-/* Input Group Styling */
+
 .upload-page .input-group {
     margin-bottom: 20px;
 }
 
-/* Textarea Styling */
+
 .upload-page textarea {
     width: 100%;
     padding: 12px 20px;
@@ -227,13 +227,13 @@ a:hover {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    resize: none; /* Prevents resizing */
+    resize: none; 
     font-size: 1em;
 }
 
-/* File Input Styling */
+
 .upload-page .input-group {
-    margin: 20px auto; /* Centers the input group and adds vertical space */
+    margin: 20px auto; 
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -267,7 +267,7 @@ a:hover {
 }
 
 
-/* Submit Button Styling */
+
 .upload-page .send-btn {
     display: inline-block;
     background-color: red;
@@ -283,10 +283,10 @@ a:hover {
 }
 
 .upload-page .send-btn:hover {
-    background-color: #cc0000; /* Darker shade for hover effect */
+    background-color: #cc0000; 
 }
 
-/* Back to Home Link Styling */
+
 .upload-page a {
     display: block;
     margin-top: 20px;
@@ -296,10 +296,10 @@ a:hover {
 }
 
 .upload-page a:hover {
-    opacity: 0.7; /* Slight transparency on hover */
+    opacity: 0.7; 
 }
 
-/* About Page Specific Styles */
+
 .about-page .container {
     max-width: 800px;
     margin: 20px auto;
@@ -337,7 +337,7 @@ a:hover {
     opacity: 0.7; 
 }
 
-/* contact page */
+
 .contact-page .container{
     max-width: 800px;
     margin: 20px auto;
@@ -353,7 +353,7 @@ a:hover {
 }
 
 .contact-page label {
-    display: block; /* Makes label take the full width */
+    display: block; 
     cursor: pointer;
     color: #000;
 }
@@ -406,41 +406,41 @@ a:hover {
     opacity: 0.7;
 }
 
-/* Single Post Page Styles */
+
 .single-post-page {
-    background-color: #000; /* Adjusted to ensure text contrast */
+    background-color: #000; 
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px; /* Adds padding around the content */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack child elements vertically */
-    align-items: center; /* Center child elements horizontally */
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
 }
 
 .single-post-page h1 {
-    color: red; /* Heading color */
-    font-size: 4vw; /* Responsive font size */
+    color: red; 
+    font-size: 4vw; 
     font-family: Arial, Helvetica, sans-serif;
     font-stretch: ultra-condensed;
-    margin: 20px auto; /* Centers the heading */
-    mix-blend-mode: difference; /* For text effect */
+    margin: 20px auto; 
+    mix-blend-mode: difference; 
 }
 
 
 .single-post-page .post-details img {
     max-width: 100%;
     height: auto;
-    padding: 5px; /* Reduced padding for tighter spacing */
+    padding: 5px; 
 }
 
 .single-post-page .post-details .blessing {
-    font-size: 4vw; /* Same size as blessing text */
-    color: red; /* Text color */
-    padding: 0.001px; /* Reduced padding for tighter spacing */
+    font-size: 4vw; 
+    color: red; 
+    padding: 0.001px;
 }
 
 .single-post-page .post-details .post-date {
-    font-style: italic; /* Style for the date */
-    font-size: 3vw; /* Smaller font size for the date */
-    color: red; /* Text color */
-    padding: 0.001px; /* Reduced padding for tighter spacing */
+    font-style: italic; 
+    font-size: 3vw; 
+    color: red; 
+    padding: 0.001px; 
 }
